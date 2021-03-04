@@ -1,0 +1,13 @@
+Individual , Population , MotherID , FatherID , Ploidy
+A , 0 , NA , NA , 4
+B , 0 , NA , NA , 4
+AxB0001 , 1 , A , B , 4
+AxB0002 , 1 , A , B , 4
+AxB0003 , 1 , A , B , 4
+AxB0004 , 1 , A , B , 4
+AxB0005 , 1 , A , B , 4
+AxB0006 , 1 , A , B , 4
+AxB0007 , 1 , A , B , 4
+AxB0008 , 1 , A , B , 4
+AxB0009 , 1 , A , B , 4
+AxB0010 , 1 , A , B , 4
