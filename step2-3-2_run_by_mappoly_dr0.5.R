@@ -18,7 +18,7 @@ getwd()
 source("../mappoly2polyorigin_V2.R")
 
 # run mappoly
-dr = 0
+dr = 0.5
 sumfile = paste0("ressum_F1_mappoly_DR",dr,".txt")
 res <- c("mappoly_version",paste0(packageVersion("mappoly")))
 write(res, file = sumfile,ncolumns = length(res),append = TRUE, sep = ",")
