@@ -1,0 +1,252 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     11439,        244]
+NotebookOptionsPosition[     10513,        219]
+NotebookOutlinePosition[     10918,        235]
+CellTagsIndexPosition[     10875,        232]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"SetDirectory", "[", 
+  RowBox[{"NotebookDirectory", "[", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7921440395691643`*^9, 3.792144054268982*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"aabbc522-ab69-489e-9823-7d88f27e535f"],
+
+Cell[BoxData["\<\"D:\\\\Chaozhi\\\\DirectoryWUR\\\\PolyploidProject_AFRI\\\\\
+TestPolyOrigin_4x\\\\RealData\\\\PotatoDiallel\\\\step2-2_run mappoly\"\>"], \
+"Output",
+ CellChangeTimes->{
+  3.792149557687955*^9, {3.7921497113165636`*^9, 3.792149732157781*^9}, 
+   3.79240290149986*^9, 3.7929022607758875`*^9, 3.793016793803258*^9, 
+   3.7938547470995264`*^9, {3.8148464186409583`*^9, 3.814846440672141*^9}, 
+   3.814847136971133*^9, 3.8148474043131857`*^9, 3.8148475337376184`*^9, 
+   3.8148478983727307`*^9, 3.824785802489974*^9, 3.8261834110382876`*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"cba582d7-0628-47a6-a771-b5dac94117da"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"probfilels", "=", 
+  RowBox[{"FileNames", "[", 
+   RowBox[{"{", "\"\<*genoprob_mappoly.csv\>\"", "}"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7921440582079024`*^9, 3.7921440786479874`*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"8bec6549-135f-44fa-9435-702d62a5b2c9"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"potato_pop1_chr10_genoprob_mappoly.csv\"\>", 
+   ",", "\<\"potato_pop1_chr11_genoprob_mappoly.csv\"\>", 
+   ",", "\<\"potato_pop1_chr12_genoprob_mappoly.csv\"\>", 
+   ",", "\<\"potato_pop1_chr1_genoprob_mappoly.csv\"\>", 
+   ",", "\<\"potato_pop1_chr2_genoprob_mappoly.csv\"\>", 
+   ",", "\<\"potato_pop1_chr3_genoprob_mappoly.csv\"\>", 
+   ",", "\<\"potato_pop1_chr4_genoprob_mappoly.csv\"\>", 
+   ",", "\<\"potato_pop1_chr5_genoprob_mappoly.csv\"\>", 
+   ",", "\<\"potato_pop1_chr6_genoprob_mappoly.csv\"\>", 
+   ",", "\<\"potato_pop1_chr7_genoprob_mappoly.csv\"\>", 
+   ",", "\<\"potato_pop1_chr8_genoprob_mappoly.csv\"\>", 
+   ",", "\<\"potato_pop1_chr9_genoprob_mappoly.csv\"\>", 
+   ",", "\<\"potato_pop2_chr10_genoprob_mappoly.csv\"\>", 
+   ",", "\<\"potato_pop2_chr11_genoprob_mappoly.csv\"\>", 
+   ",", "\<\"potato_pop2_chr12_genoprob_mappoly.csv\"\>", 
+   ",", "\<\"potato_pop2_chr1_genoprob_mappoly.csv\"\>", 
+   ",", "\<\"potato_pop2_chr2_genoprob_mappoly.csv\"\>", 
+   ",", "\<\"potato_pop2_chr3_genoprob_mappoly.csv\"\>", 
+   ",", "\<\"potato_pop2_chr4_genoprob_mappoly.csv\"\>", 
+   ",", "\<\"potato_pop2_chr5_genoprob_mappoly.csv\"\>", 
+   ",", "\<\"potato_pop2_chr6_genoprob_mappoly.csv\"\>", 
+   ",", "\<\"potato_pop2_chr7_genoprob_mappoly.csv\"\>", 
+   ",", "\<\"potato_pop2_chr8_genoprob_mappoly.csv\"\>", 
+   ",", "\<\"potato_pop2_chr9_genoprob_mappoly.csv\"\>", 
+   ",", "\<\"potato_pop3_chr10_genoprob_mappoly.csv\"\>", 
+   ",", "\<\"potato_pop3_chr11_genoprob_mappoly.csv\"\>", 
+   ",", "\<\"potato_pop3_chr12_genoprob_mappoly.csv\"\>", 
+   ",", "\<\"potato_pop3_chr1_genoprob_mappoly.csv\"\>", 
+   ",", "\<\"potato_pop3_chr2_genoprob_mappoly.csv\"\>", 
+   ",", "\<\"potato_pop3_chr3_genoprob_mappoly.csv\"\>", 
+   ",", "\<\"potato_pop3_chr4_genoprob_mappoly.csv\"\>", 
+   ",", "\<\"potato_pop3_chr5_genoprob_mappoly.csv\"\>", 
+   ",", "\<\"potato_pop3_chr6_genoprob_mappoly.csv\"\>", 
+   ",", "\<\"potato_pop3_chr7_genoprob_mappoly.csv\"\>", 
+   ",", "\<\"potato_pop3_chr8_genoprob_mappoly.csv\"\>", 
+   ",", "\<\"potato_pop3_chr9_genoprob_mappoly.csv\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.7921495577973332`*^9, {3.7921497116603136`*^9, 3.7921497322984037`*^9}, 
+   3.7924029017498503`*^9, 3.7929022620922017`*^9, 3.793016794131385*^9, 
+   3.7938547474055276`*^9, {3.814846418973072*^9, 3.814846440819309*^9}, 
+   3.814847137218627*^9, 3.814847404444726*^9, 3.8148475338753386`*^9, 
+   3.8148478986367273`*^9, 3.824785802629529*^9, 3.8261834111630974`*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"2eee60af-d4bd-468f-b12c-c657cff56f73"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Table", "[", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"id", "=", 
+      RowBox[{"StringReplace", "[", 
+       RowBox[{
+        RowBox[{"StringJoin", "@@", 
+         RowBox[{"Riffle", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"StringSplit", "[", 
+             RowBox[{"probfile", ",", "\"\<_\>\""}], "]"}], "[", 
+            RowBox[{"[", 
+             RowBox[{";;", "4"}], "]"}], "]"}], ",", "\"\<_\>\""}], "]"}]}], 
+        ",", 
+        RowBox[{"\"\<genoprob\>\"", "\[Rule]", "\"\<\>\""}]}], "]"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"dosefile", "=", 
+      RowBox[{
+      "\"\<..\\\\step1_data\\\\\>\"", "<>", "id", "<>", 
+       "\"\<dose.csv\>\""}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"dose", "=", 
+      RowBox[{"Import", "[", "dosefile", "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"headls", "=", 
+      RowBox[{"dose", "[", 
+       RowBox[{"[", "1", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"prob", "=", 
+      RowBox[{"Import", "[", "probfile", "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"(*", 
+      RowBox[{
+       RowBox[{"set", " ", "chrid"}], ",", 
+       RowBox[{"only", " ", "one", " ", "linkage", " ", "group"}]}], "*)"}], 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"prob", "[", 
+       RowBox[{"[", 
+        RowBox[{
+         RowBox[{"2", ";;"}], ",", "2"}], "]"}], "]"}], "=", 
+      RowBox[{"dose", "[", 
+       RowBox[{"[", 
+        RowBox[{"2", ",", "2"}], "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"prob", "[", 
+       RowBox[{"[", "1", "]"}], "]"}], "=", "headls"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"outfile", "=", 
+      RowBox[{"StringReplace", "[", 
+       RowBox[{"probfile", ",", 
+        RowBox[{
+        "\"\<genoprob_mappoly.csv\>\"", "\[Rule]", 
+         "\"\<genoprob_mappoly_correctid.csv\>\""}]}], "]"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Export", "[", 
+      RowBox[{"outfile", ",", "prob"}], "]"}]}], ",", 
+    RowBox[{"{", 
+     RowBox[{"probfile", ",", "probfilels"}], "}"}]}], "]"}], "//", 
+  "AbsoluteTiming"}]], "Input",
+ CellChangeTimes->{{3.7921440839313245`*^9, 3.7921441028575015`*^9}, {
+   3.792144251111359*^9, 3.7921442662506423`*^9}, {3.7921443493103275`*^9, 
+   3.7921443882377677`*^9}, {3.7921444772097373`*^9, 
+   3.7921444811952715`*^9}, {3.7921445172702866`*^9, 
+   3.7921445196296825`*^9}, {3.7921446112414703`*^9, 3.792144662429045*^9}, 
+   3.7921447049014826`*^9, {3.7921495417619276`*^9, 3.7921495447026625`*^9}, {
+   3.792149704205217*^9, 3.792149730642488*^9}, 3.792902363222119*^9, {
+   3.814846560482686*^9, 3.814846560652034*^9}, {3.814847391004402*^9, 
+   3.8148473913209324`*^9}, {3.814847488086377*^9, 3.8148474966650558`*^9}, {
+   3.8148478960537243`*^9, 3.814847896237723*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"9ff50f18-b0a8-45a1-a025-871be24bfed4"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"25.6891077`", ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"potato_pop1_chr10_genoprob_mappoly_correctid.csv\"\>", 
+     ",", "\<\"potato_pop1_chr11_genoprob_mappoly_correctid.csv\"\>", 
+     ",", "\<\"potato_pop1_chr12_genoprob_mappoly_correctid.csv\"\>", 
+     ",", "\<\"potato_pop1_chr1_genoprob_mappoly_correctid.csv\"\>", 
+     ",", "\<\"potato_pop1_chr2_genoprob_mappoly_correctid.csv\"\>", 
+     ",", "\<\"potato_pop1_chr3_genoprob_mappoly_correctid.csv\"\>", 
+     ",", "\<\"potato_pop1_chr4_genoprob_mappoly_correctid.csv\"\>", 
+     ",", "\<\"potato_pop1_chr5_genoprob_mappoly_correctid.csv\"\>", 
+     ",", "\<\"potato_pop1_chr6_genoprob_mappoly_correctid.csv\"\>", 
+     ",", "\<\"potato_pop1_chr7_genoprob_mappoly_correctid.csv\"\>", 
+     ",", "\<\"potato_pop1_chr8_genoprob_mappoly_correctid.csv\"\>", 
+     ",", "\<\"potato_pop1_chr9_genoprob_mappoly_correctid.csv\"\>", 
+     ",", "\<\"potato_pop2_chr10_genoprob_mappoly_correctid.csv\"\>", 
+     ",", "\<\"potato_pop2_chr11_genoprob_mappoly_correctid.csv\"\>", 
+     ",", "\<\"potato_pop2_chr12_genoprob_mappoly_correctid.csv\"\>", 
+     ",", "\<\"potato_pop2_chr1_genoprob_mappoly_correctid.csv\"\>", 
+     ",", "\<\"potato_pop2_chr2_genoprob_mappoly_correctid.csv\"\>", 
+     ",", "\<\"potato_pop2_chr3_genoprob_mappoly_correctid.csv\"\>", 
+     ",", "\<\"potato_pop2_chr4_genoprob_mappoly_correctid.csv\"\>", 
+     ",", "\<\"potato_pop2_chr5_genoprob_mappoly_correctid.csv\"\>", 
+     ",", "\<\"potato_pop2_chr6_genoprob_mappoly_correctid.csv\"\>", 
+     ",", "\<\"potato_pop2_chr7_genoprob_mappoly_correctid.csv\"\>", 
+     ",", "\<\"potato_pop2_chr8_genoprob_mappoly_correctid.csv\"\>", 
+     ",", "\<\"potato_pop2_chr9_genoprob_mappoly_correctid.csv\"\>", 
+     ",", "\<\"potato_pop3_chr10_genoprob_mappoly_correctid.csv\"\>", 
+     ",", "\<\"potato_pop3_chr11_genoprob_mappoly_correctid.csv\"\>", 
+     ",", "\<\"potato_pop3_chr12_genoprob_mappoly_correctid.csv\"\>", 
+     ",", "\<\"potato_pop3_chr1_genoprob_mappoly_correctid.csv\"\>", 
+     ",", "\<\"potato_pop3_chr2_genoprob_mappoly_correctid.csv\"\>", 
+     ",", "\<\"potato_pop3_chr3_genoprob_mappoly_correctid.csv\"\>", 
+     ",", "\<\"potato_pop3_chr4_genoprob_mappoly_correctid.csv\"\>", 
+     ",", "\<\"potato_pop3_chr5_genoprob_mappoly_correctid.csv\"\>", 
+     ",", "\<\"potato_pop3_chr6_genoprob_mappoly_correctid.csv\"\>", 
+     ",", "\<\"potato_pop3_chr7_genoprob_mappoly_correctid.csv\"\>", 
+     ",", "\<\"potato_pop3_chr8_genoprob_mappoly_correctid.csv\"\>", 
+     ",", "\<\"potato_pop3_chr9_genoprob_mappoly_correctid.csv\"\>"}], 
+    "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.7921495911377125`*^9, {3.7921497226897464`*^9, 3.7921497516497574`*^9}, 
+   3.7924029155074387`*^9, 3.792902273731603*^9, 3.7929024047309904`*^9, 
+   3.793016830662795*^9, 3.7938547838176966`*^9, 3.814846444850994*^9, 
+   3.8148466092432795`*^9, 3.814847430960367*^9, 3.814847563703415*^9, 
+   3.8148479291378174`*^9, 3.824785837184022*^9, 3.826183436869458*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"c3c22c7f-4a6f-4fe7-bee1-b06350ec41e8"]
+}, Open  ]]
+},
+WindowSize->{1141.2, 574.8},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"12.2 for Microsoft Windows (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"3587e398-bf3a-470c-8671-f55cf300b1c7"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 250, 4, 28, "Input",ExpressionUUID->"aabbc522-ab69-489e-9823-7d88f27e535f"],
+Cell[833, 28, 632, 9, 32, "Output",ExpressionUUID->"cba582d7-0628-47a6-a771-b5dac94117da"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1502, 42, 294, 5, 28, "Input",ExpressionUUID->"8bec6549-135f-44fa-9435-702d62a5b2c9"],
+Cell[1799, 49, 2615, 44, 248, "Output",ExpressionUUID->"2eee60af-d4bd-468f-b12c-c657cff56f73"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4451, 98, 2938, 69, 224, "Input",ExpressionUUID->"9ff50f18-b0a8-45a1-a025-871be24bfed4"],
+Cell[7392, 169, 3105, 47, 365, "Output",ExpressionUUID->"c3c22c7f-4a6f-4fe7-bee1-b06350ec41e8"]
+}, Open  ]]
+}
+]
+*)
+
