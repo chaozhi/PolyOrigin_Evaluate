@@ -12,7 +12,7 @@
 
 Run the following script files in the folder "simF1":
 
-* "step1_simtest_f1data.R" produce simulated data using PedigreeSimR and saved in the empty folder F1data. See F1data.zip for the example of simulated data
+* "step1_simtest_f1data.R" produce simulated data using PedigreeSimR and saved in the empty folder F1data. Use "TableS1_RussetFounderHaplo.csv" as the true founder haplotypes. See F1data.zip for the example of simulated data
 
 * "step2-1_run_by_polyorigin.jl" perform haplotype reconstruction using PolyOrigin. Results will be saved in the empty folder "res_polyorigin"
 
