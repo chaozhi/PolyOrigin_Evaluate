@@ -2,11 +2,11 @@
 
 ## Evaluate with real 3x3 half-diallel potato data
 
-* In "run_polyorigin", run "step1_run_polyorigin.jl" to perform haplotype reconstruction using input genofile "TableS2_dose.csv" and pedfile "TableS3_ped.csv".
+* In "run_polyorigin", "step1_run_polyorigin.jl" perform haplotype reconstruction using input genofile "TableS2_dose.csv" and pedfile "TableS3_ped.csv".
 
 * In "run_mappoly"
-  * xx
-  * xx
+  * The 3x3 half-diallel crosses data: "TableS2_dose.csv" is split by sub-populations and chromosomes "potato_pop?_chr??-dose_mappoly.csv", and "TableS3_ped.csv" is split into "potato_pop?_ped.csv"
+  * "step1_run_mappoly.R" perform haplotype reconstruction using MAPpoly for each sub-population and each chromosome. 
 
 ## Compare with MAPpoly and TetraOrigin for simulated F1 data
 
