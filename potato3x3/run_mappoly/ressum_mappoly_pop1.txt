@@ -1,0 +1,2 @@
+mappoly_version,0.2.2.6
+dataid,chr,pop,nfilt,tread,tmakeseq,tpair,thmm,thmmerr,tprob,tsave

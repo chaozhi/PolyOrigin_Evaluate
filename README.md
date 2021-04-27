@@ -1,4 +1,4 @@
-# Test PolyOrigin
+# Evaluate PolyOrigin
 
 ## Evaluate with real 3x3 half-diallel potato data
 
@@ -8,7 +8,7 @@
   * genofile "potato_pop?_chr??_dose_mappoly.csv" was extracted from "TableS2_dose.csv", and pedfile "potato_pop?_ped.csv" was extracted from "TableS3_ped.csv".
   * "step1_run_mappoly.R" perform haplotype reconstruction using MAPpoly for each sub-population and each chromosome.
 
-## Compare with MAPpoly and TetraOrigin for simulated F1 data
+## Compare with MAPpoly and TetraOrigin for single F1
 
 Run the following script files in the folder "simF1":
 
