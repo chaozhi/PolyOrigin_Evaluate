@@ -5,8 +5,8 @@
 * In "run_polyorigin", "step1_run_polyorigin.jl" perform haplotype reconstruction using input genofile "TableS2_dose.csv" and pedfile "TableS3_ped.csv".
 
 * In "run_mappoly"
-  * The 3x3 half-diallel crosses data: "TableS2_dose.csv" is split by sub-populations and chromosomes "potato_pop?_chr??-dose_mappoly.csv", and "TableS3_ped.csv" is split into "potato_pop?_ped.csv"
-  * "step1_run_mappoly.R" perform haplotype reconstruction using MAPpoly for each sub-population and each chromosome. 
+  * genofile "potato_pop?_chr??_dose_mappoly.csv" was extracted from "TableS2_dose.csv", and pedfile "potato_pop?_ped.csv" was extracted from "TableS3_ped.csv".
+  * "step1_run_mappoly.R" perform haplotype reconstruction using MAPpoly for each sub-population and each chromosome.
 
 ## Compare with MAPpoly and TetraOrigin for simulated F1 data
 
@@ -17,8 +17,6 @@ Run the following script files in the folder "simF1":
 * "step2-1_run_by_polyorigin.jl" perform haplotype reconstruction using PolyOrigin. Results will be saved in the empty folder "res_polyorigin"
 
 * "step2-2_run_by_tetraorigin.nb" perform haplotype reconstruction using TetraOrigin. Results will be saved in the empty folder "res_tetraorigin"
-
-* "step2-3-1_prepare_input_mappoly.R" transform the simulated data files in the input files of mappoly.  Results will be saved in the empty folder "res_mappoly"
 
 * "step2-3-1_prepare_input_mappoly.R" transform the simulated data files in the input files of mappoly.  Results will be saved in the empty folder "res_mappoly"
 
