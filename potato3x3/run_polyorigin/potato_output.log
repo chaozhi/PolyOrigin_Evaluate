@@ -1,0 +1,39 @@
+Julia version: 1.6.0
+      Status `C:\Users\zheng026\.julia\environments\v1.6\Project.toml`
+  [16de7d52] PolyOrigin v0.5.9 `https://github.com/chaozhi/PolyOrigin.jl#main`
+=================================polyOrigin=================================
+PolyOrigin, polyOrigin, logfile=potato_output.log, 2021-04-27T16:04:26.208
+list of input files: 
+genofile = TableS2_dose.csv
+pedfile = TableS3_ped.csv
+file input/output options: 
+delimchar = ,
+missingstring = NA
+commentstring = #
+save design plot in D:\Chaozhi\Workspace\JuliaWorkspace\Workspace_Polyploid\Workspace_PolyOrigin\PolyOrigin_Test\potato3x3\run_polyorigin\potato_output_plots\potato_output_pedigree.png
+----------------------------------phasing-----------------------------------
+PolyOrigin, polyPhase, logfile=IOStream(<file D:\Chaozhi\Workspace\JuliaWorkspace\Workspace_Polyploid\Workspace_PolyOrigin\PolyOrigin_Test\potato3x3\run_polyorigin\potato_output.log>), 2021-04-27T16:05:06.644
+list of option values: 
+epsilon = 0.01
+seqerr = 0.001
+chrpairing_phase = 22
+byparent = true for simple biparental cross
+byneighbor = true for max(ploidy) >= 6
+chrsubset = all chromosomes
+snpsubset = all markers
+isparallel = false
+delmarker = true
+delsiglevel = 0.05
+maxstuck = 5
+maxiter = 30
+minrun = 3
+maxrun = 10
+refhapfile = nothing
+missingstring = NA
+outstem = potato_output
+logfile = IOStream(<file D:\Chaozhi\Workspace\JuliaWorkspace\Workspace_Polyploid\Workspace_PolyOrigin\PolyOrigin_Test\potato3x3\run_polyorigin\potato_output.log>)
+workdir = D:\Chaozhi\Workspace\JuliaWorkspace\Workspace_Polyploid\Workspace_PolyOrigin\PolyOrigin_Test\potato3x3\run_polyorigin
+verbose = true
+data: #pop=3, #parent=3, #offspring=434, #chr=12, #marker=5078
+phasing connected parents: W6511-1R, VillettaRose, W9914-1R
+set byparent=true

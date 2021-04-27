@@ -1,5 +1,13 @@
 # Test PolyOrigin
 
+## Evaluate with real 3x3 half-diallel potato data
+
+* In "run_polyorigin", run "step1_run_polyorigin.jl" to perform haplotype reconstruction using input genofile "TableS2_dose.csv" and pedfile "TableS3_ped.csv".
+
+* In "run_mappoly"
+  * xx
+  * xx
+
 ## Compare with MAPpoly and TetraOrigin for simulated F1 data
 
 Run the following script files in the folder "simF1":
@@ -17,5 +25,3 @@ Run the following script files in the folder "simF1":
 * "step2-3-2_run_by_mappoly_dr0.R" (for simulated data without double reduction) and "step2-3-2_run_by_mappoly_dr0.5.R" ( with double reduction) perform haplotype reconstruction using MAPpoly. Results will be saved in the empty folder "res_mappoly"
 
 * "step3-2_calculate accuracy_tetraorigin.nb" and "step3-3_calculate accuracy_mappoly.jl" caculate accuracy for the results of tetraorigin and mappoly, based on ground true-value files in F1data. The accuracies for PolyOrigin results have been calculated in the step2-1.  
-
-## Evaluate with real 3x3 half-diallel potato data
