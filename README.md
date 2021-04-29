@@ -5,7 +5,7 @@
 * In "potato3x3/run_polyorigin", "step1_run_polyorigin.jl" performs haplotype reconstruction using input genofile "TableS2_dose.csv" and pedfile "TableS3_ped.csv".
 
 * In "potato3x3/run_mappoly"
-  * genofile "potato_pop?_chr??_dose_mappoly.csv" was extracted from "TableS2_dose.csv", and pedfile "potato_pop?_ped.csv" was extracted from "TableS3_ped.csv".
+  * genofile "potato_popx_chrxx_dose_mappoly.csv" was extracted from "TableS2_dose.csv", and pedfile "potato_popx_ped.csv" was extracted from "TableS3_ped.csv".
   * "step1_run_mappoly.R" perform haplotype reconstruction using MAPpoly for each sub-population and each chromosome.
 
 ## Compare with MAPpoly and TetraOrigin for single F1
